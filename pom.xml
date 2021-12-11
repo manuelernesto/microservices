@@ -6,7 +6,13 @@
 
     <groupId>io.github.manuelernesto</groupId>
     <artifactId>me-services</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+
+    <modules>
+        <module>customer</module>
+    </modules>
 
     <name>me-services</name>
     <url>https://manuelernesto.github.io</url>
