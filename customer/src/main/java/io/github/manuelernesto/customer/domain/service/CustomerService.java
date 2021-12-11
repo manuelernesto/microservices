@@ -1,5 +1,6 @@
 package io.github.manuelernesto.customer.domain.service;
 
+import io.github.manuelernesto.customer.domain.repository.CustomerRepository;
 import io.github.manuelernesto.customer.model.Customer;
 import io.github.manuelernesto.customer.model.request.CustomerRegistrationRequest;
 import org.springframework.stereotype.Service;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @date 11/12/21 13:19
  */
 @Service
-public record CustomerService() {
+public record CustomerService(CustomerRepository customerRepository) {
     public void registerCustomer(CustomerRegistrationRequest request) {
 
         var customer = Customer.builder()
@@ -21,6 +22,7 @@ public record CustomerService() {
 
         // todo: check if email valid
         // todo: check if email not taken
-        // todo: store customer in db
+
+        customerRepository.save(customer);
     }
 }
