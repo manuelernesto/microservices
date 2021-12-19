@@ -1,4 +1,4 @@
-package io.github.manuelernesto.fraud.model
+package io.github.manuelernesto.fraud.model.response
 
 /**
  * @author  Manuel Ernesto (manuelernest0)
