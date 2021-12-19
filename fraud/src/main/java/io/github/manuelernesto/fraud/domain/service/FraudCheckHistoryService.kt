@@ -15,10 +15,10 @@ class FraudCheckHistoryService(private val repository: FraudCheckHistoryReposito
 
     fun isFraudulentCustomer(customerId: Int): Boolean {
 
-        repository.save(FraudCheckHistory().also {
-            it.customerId = customerId
-            it.isFraudster = false
-            it.createdAt = LocalDateTime.now()
+        repository.save(FraudCheckHistory().apply {
+            this.customerId = customerId
+            this.isFraudster = false
+            this.createdAt = LocalDateTime.now()
         })
 
         return false
