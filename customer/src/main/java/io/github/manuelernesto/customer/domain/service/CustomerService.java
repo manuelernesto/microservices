@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public record CustomerService(CustomerRepository customerRepository, RestTemplate restTemplate) {
 
-    private static final String CHECK_FRAUD_URL = "http://localhost:8082/api/v1/fraud-check/{customerId}";
+    private static final String CHECK_FRAUD_URL = "http://FRAUD/api/v1/fraud-check/{customerId}";
 
     public void registerCustomer(CustomerRegistrationRequest request) {
 
