@@ -1,0 +1,17 @@
+POST http://localhost:8082/api/v1/fraud-check
+Content-Type: application/json
+
+{
+  "firstName": "Petter",
+  "lastName": "Parker",
+  "email": "petter@mail.com"
+}
+
+###
+
+
+GET http://localhost:8082/api/v1/fraud-check/1
+Content-Type: application/json
+
+###
+
