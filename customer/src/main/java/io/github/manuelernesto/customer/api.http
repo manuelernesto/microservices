@@ -2,7 +2,7 @@ POST http://localhost:8081/api/v1/customers
 Content-Type: application/json
 
 {
-  "firstName": "Resolute",
+  "firstName": "Resolute1",
   "lastName": "Lost",
   "email": "lost@mail.com"
 }

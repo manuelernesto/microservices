@@ -36,10 +36,9 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
         //check if fraudster
         var fraudCheckResponse = restTemplate.getForObject(CHECK_FRAUD_URL, FraudCheckResponse.class, customer.getId());
 
-        System.out.println(fraudCheckResponse.toString());
 
-//        if (fraudCheckResponse.isFraudster())
-//            throw new IllegalStateException("Fraudster");
+        if (fraudCheckResponse.fraudster())
+            throw new IllegalStateException("Fraudster");
 
 
         // todo: send notification

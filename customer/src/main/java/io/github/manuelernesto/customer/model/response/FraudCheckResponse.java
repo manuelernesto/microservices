@@ -5,5 +5,5 @@ package io.github.manuelernesto.customer.model.response;
  * @version 1.0
  * @date 19/12/21 12:06
  */
-public record FraudCheckResponse(Boolean isFraudster) {
+public record FraudCheckResponse(Boolean fraudster) {
 }
