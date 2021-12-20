@@ -1,7 +1,7 @@
-package fraud.domain.service
+package io.github.manuelernesto.fraud.domain.service
 
-import fraud.domain.repository.FraudCheckHistoryRepository
-import fraud.model.FraudCheckHistory
+import io.github.manuelernesto.fraud.domain.repository.FraudCheckHistoryRepository
+import io.github.manuelernesto.fraud.model.FraudCheckHistory
 import org.springframework.stereotype.Service
 import java.time.LocalDateTime
 

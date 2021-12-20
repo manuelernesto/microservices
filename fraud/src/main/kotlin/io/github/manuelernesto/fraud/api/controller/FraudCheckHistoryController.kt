@@ -1,7 +1,7 @@
-package fraud.api.controller
+package io.github.manuelernesto.fraud.api.controller
 
 import io.github.manuelernesto.clients.fraud.FraudCheckResponse
-import fraud.domain.service.FraudCheckHistoryService
+import io.github.manuelernesto.fraud.domain.service.FraudCheckHistoryService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

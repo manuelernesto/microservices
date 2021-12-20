@@ -1,6 +1,6 @@
-package fraud.domain.repository
+package io.github.manuelernesto.fraud.domain.repository
 
-import fraud.model.FraudCheckHistory
+import io.github.manuelernesto.fraud.model.FraudCheckHistory
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
