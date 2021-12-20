@@ -1,4 +1,4 @@
-package io.github.manuelernesto.fraud.model
+package fraud.model
 
 import java.time.LocalDateTime
 import javax.persistence.*
