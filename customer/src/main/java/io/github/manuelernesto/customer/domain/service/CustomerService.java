@@ -1,9 +1,10 @@
 package io.github.manuelernesto.customer.domain.service;
 
+import io.github.manuelernesto.clients.fraud.FraudCheckResponse;
+import io.github.manuelernesto.clients.fraud.FraudClient;
 import io.github.manuelernesto.customer.domain.repository.CustomerRepository;
 import io.github.manuelernesto.customer.model.Customer;
 import io.github.manuelernesto.customer.model.request.CustomerRegistrationRequest;
-import io.github.manuelernesto.customer.model.response.FraudCheckResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -13,7 +14,8 @@ import org.springframework.web.client.RestTemplate;
  * @date 11/12/21 13:19
  */
 @Service
-public record CustomerService(CustomerRepository customerRepository, RestTemplate restTemplate) {
+public record CustomerService(CustomerRepository customerRepository, RestTemplate restTemplate,
+                              FraudClient fraudClient) {
 
     private static final String CHECK_FRAUD_URL = "http://FRAUD/api/v1/fraud-check/{customerId}";
 
@@ -34,7 +36,12 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
         customerRepository.saveAndFlush(customer);
 
         //check if fraudster
-        var fraudCheckResponse = restTemplate.getForObject(CHECK_FRAUD_URL, FraudCheckResponse.class, customer.getId());
+
+        //opt 1 - without using Feign
+        //var fraudCheckResponse = restTemplate.getForObject(CHECK_FRAUD_URL, FraudCheckResponse.class, customer.getId());
+
+        //opt 2 - using Feign
+        FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
 
 
         if (fraudCheckResponse.fraudster())

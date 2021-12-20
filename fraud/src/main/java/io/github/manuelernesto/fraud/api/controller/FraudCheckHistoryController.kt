@@ -1,8 +1,7 @@
 package io.github.manuelernesto.fraud.api.controller
 
+import io.github.manuelernesto.clients.fraud.FraudCheckResponse
 import io.github.manuelernesto.fraud.domain.service.FraudCheckHistoryService
-import io.github.manuelernesto.fraud.model.response.FraudCheckResponse
-import lombok.extern.slf4j.Slf4j
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
