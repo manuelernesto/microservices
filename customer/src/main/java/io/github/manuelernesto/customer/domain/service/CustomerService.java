@@ -2,6 +2,8 @@ package io.github.manuelernesto.customer.domain.service;
 
 import io.github.manuelernesto.clients.fraud.FraudCheckResponse;
 import io.github.manuelernesto.clients.fraud.FraudClient;
+import io.github.manuelernesto.clients.notification.NotificationClient;
+import io.github.manuelernesto.clients.notification.NotificationRequest;
 import io.github.manuelernesto.customer.domain.repository.CustomerRepository;
 import io.github.manuelernesto.customer.model.Customer;
 import io.github.manuelernesto.customer.model.request.CustomerRegistrationRequest;
@@ -15,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @Service
 public record CustomerService(CustomerRepository customerRepository, RestTemplate restTemplate,
-                              FraudClient fraudClient) {
+                              FraudClient fraudClient, NotificationClient notificationClient) {
 
     private static final String CHECK_FRAUD_URL = "http://FRAUD/api/v1/fraud-check/{customerId}";
 
@@ -49,5 +51,7 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
 
 
         // todo: send notification
+        var notificationRequest = new NotificationRequest(customer.getId(), customer.getEmail(), "Sending new notifcation");
+        notificationClient.sendNotification(notificationRequest);
     }
 }
