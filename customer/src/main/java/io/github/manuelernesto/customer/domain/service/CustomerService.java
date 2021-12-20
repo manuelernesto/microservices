@@ -50,7 +50,8 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
             throw new IllegalStateException("Fraudster");
 
 
-        // todo: send notification
+        // todo: make it async. add to queue
+        // send notification
         var notificationRequest = new NotificationRequest(customer.getId(), customer.getEmail(), "Sending new notifcation");
         notificationClient.sendNotification(notificationRequest);
     }
