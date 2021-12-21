@@ -7,4 +7,5 @@ fraud/target
 eureka-server/target
 clients/target
 notification/target
+apigw/target
 .idea/sonarlint
