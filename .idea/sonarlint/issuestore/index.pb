@@ -67,5 +67,14 @@ w
 Gapigw/src/main/java/io/github/manuelernesto/apigw/ApiGWApplication.java,a/b/ab646d3c7f1f02c12007a8971c8a3a9a9bacdd72
 =
 apigw/pom.xml,7/6/769e90cc07d0503e53ff9da3a1e936a2b49abb7c
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+p
+@customer/src/main/java/io/github/manuelernesto/customer/api.http,6/b/6bf47705bdc9f6c5877a43b0e4f24f84a454b3df
+j
+:apigw/src/main/java/io/github/manuelernesto/apigw/api.http,9/6/96c12a7809e71231daf282724dcb3a3fc5b2c44d
+B
+docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
+Ž
+^customer/src/main/java/io/github/manuelernesto/customer/api/controller/CustomerController.java,9/1/91a1d25c855d24c9e08ed43b98d172982cd36907
