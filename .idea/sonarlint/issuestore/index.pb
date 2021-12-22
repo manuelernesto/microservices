@@ -15,8 +15,6 @@ E
 Rcustomer/src/main/java/io/github/manuelernesto/customer/config/CustomerConfig.java,9/d/9da70ede20e1523f6c2830a142f105dd308d4d25
 ?
 clients/pom.xml,e/8/e897e41994586ab73af075bc072526099d5eec43
-Ž
-^customer/src/main/java/io/github/manuelernesto/customer/api/controller/CustomerController.java,9/1/91a1d25c855d24c9e08ed43b98d172982cd36907
 l
 <fraud/src/main/kotlin/io/github/manuelernesto/fraud/api.http,c/e/ce573b863dd724dabe3a89e9c560ba869e7f8562
 ƒ
@@ -59,8 +57,6 @@ gnotification/src/main/kotlin/io/github/manuelernesto/notification/domain/servic
 [customer/src/main/java/io/github/manuelernesto/customer/domain/service/CustomerService.java,4/e/4e8c2daac906ae6c736cec063d20eccbc6c53009
 €
 Pcustomer/src/main/java/io/github/manuelernesto/customer/CustomerApplication.java,9/e/9ed2a9d97ced31d06033750bf90056b771c2a98b
-B
-docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
 @
 customer/pom.xml,f/0/f04db7a99ce1257e856612bd563cd946a39fac96
 D
