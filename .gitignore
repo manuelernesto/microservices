@@ -8,4 +8,5 @@ eureka-server/target
 clients/target
 notification/target
 apigw/target
+amqp/target
 .idea/sonarlint

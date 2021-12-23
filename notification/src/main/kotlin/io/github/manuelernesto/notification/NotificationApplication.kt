@@ -11,7 +11,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
  */
 
 @EnableEurekaClient
-@SpringBootApplication
+@SpringBootApplication(
+    scanBasePackages = ["io.github.manuelernesto.notification", "io.github.manuelernesto.amqp"],
+)
 open class NotificationApplication
 
 fun main(args: Array<String>) {
