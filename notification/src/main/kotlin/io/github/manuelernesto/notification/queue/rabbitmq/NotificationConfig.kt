@@ -1,4 +1,4 @@
-package io.github.manuelernesto.notification.queue
+package io.github.manuelernesto.notification.queue.rabbitmq
 
 import org.springframework.amqp.core.Binding
 import org.springframework.amqp.core.BindingBuilder

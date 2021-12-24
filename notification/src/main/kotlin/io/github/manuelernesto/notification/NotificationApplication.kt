@@ -16,6 +16,17 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 )
 open class NotificationApplication
 
+/*open class NotificationApplication(
+    private val producer: RabbitMQMessageProducer,
+    private val notificationConfig: NotificationConfig
+) : CommandLineRunner {
+
+    override fun run(vararg args: String?) {
+        producer.publish("foo", notificationConfig.internalExchange, notificationConfig.internalNotificationRoutingKey)
+    }
+
+}*/
+
 fun main(args: Array<String>) {
     runApplication<NotificationApplication>(*args)
 }

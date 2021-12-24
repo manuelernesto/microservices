@@ -1,5 +1,6 @@
 package io.github.manuelernesto.customer.domain.service;
 
+import io.github.manuelernesto.amqp.RabbitMQMessageProducer;
 import io.github.manuelernesto.clients.fraud.FraudCheckResponse;
 import io.github.manuelernesto.clients.fraud.FraudClient;
 import io.github.manuelernesto.clients.notification.NotificationClient;
@@ -16,8 +17,10 @@ import org.springframework.web.client.RestTemplate;
  * @date 11/12/21 13:19
  */
 @Service
-public record CustomerService(CustomerRepository customerRepository, RestTemplate restTemplate,
-                              FraudClient fraudClient, NotificationClient notificationClient) {
+public record CustomerService(
+        CustomerRepository customerRepository, RestTemplate restTemplate,
+        FraudClient fraudClient, NotificationClient notificationClient,
+        RabbitMQMessageProducer rabbitMQMessageProducer) {
 
     private static final String CHECK_FRAUD_URL = "http://FRAUD/api/v1/fraud-check/{customerId}";
 
@@ -39,8 +42,9 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
 
         //check if fraudster
 
-        //opt 1 - without using Feign
-        //var fraudCheckResponse = restTemplate.getForObject(CHECK_FRAUD_URL, FraudCheckResponse.class, customer.getId());
+        /*opt 1 - without using Feign
+            var fraudCheckResponse = restTemplate.getForObject(CHECK_FRAUD_URL, FraudCheckResponse.class, customer.getId());
+         */
 
         //opt 2 - using Feign
         FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
@@ -50,9 +54,12 @@ public record CustomerService(CustomerRepository customerRepository, RestTemplat
             throw new IllegalStateException("Fraudster");
 
 
-        // todo: make it async. add to queue
-        // send notification
+        // send notification - make it async. add to queue
         var notificationRequest = new NotificationRequest(customer.getId(), customer.getEmail(), "Sending new notifcation");
-        notificationClient.sendNotification(notificationRequest);
+        rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange", "internal.notification.routing-key");
+
+        /* send notification - without queue
+         notificationClient.sendNotification(notificationRequest);
+         */
     }
 }

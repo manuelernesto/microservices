@@ -49,22 +49,12 @@ jnotification/src/main/kotlin/io/github/manuelernesto/notification/api/controlle
 mnotification/src/main/kotlin/io/github/manuelernesto/notification/domain/repository/NotificationRepository.kt,0/d/0d7df22536d54764c32261c77635b9a30b782f1b
 ‹
 [clients/src/main/java/io/github/manuelernesto/clients/notification/NotificationRequest.java,a/e/ae001ec134f09e36c603148610a7a8eab17ecfed
-—
-gnotification/src/main/kotlin/io/github/manuelernesto/notification/domain/service/NotificationService.kt,8/0/806bfec24515a35d76722344052fd2db9c716d39
-‹
-[customer/src/main/java/io/github/manuelernesto/customer/domain/service/CustomerService.java,4/e/4e8c2daac906ae6c736cec063d20eccbc6c53009
-€
-Pcustomer/src/main/java/io/github/manuelernesto/customer/CustomerApplication.java,9/e/9ed2a9d97ced31d06033750bf90056b771c2a98b
 =
 fraud/pom.xml,d/0/d024669e89b7b66ac8ba07340a73edc6aa228259
 w
 Gapigw/src/main/java/io/github/manuelernesto/apigw/ApiGWApplication.java,a/b/ab646d3c7f1f02c12007a8971c8a3a9a9bacdd72
 =
 apigw/pom.xml,7/6/769e90cc07d0503e53ff9da3a1e936a2b49abb7c
-p
-@customer/src/main/java/io/github/manuelernesto/customer/api.http,6/b/6bf47705bdc9f6c5877a43b0e4f24f84a454b3df
-j
-:apigw/src/main/java/io/github/manuelernesto/apigw/api.http,9/6/96c12a7809e71231daf282724dcb3a3fc5b2c44d
 B
 docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
 Ž
