@@ -7,8 +7,6 @@ acustomer/src/main/java/io/github/manuelernesto/customer/domain/repository/Custo
 fcustomer/src/main/java/io/github/manuelernesto/customer/model/request/CustomerRegistrationRequest.java,4/b/4b7b89471c66e63bad8628f5088bcbab5c49ac9e
 {
 Kcustomer/src/main/java/io/github/manuelernesto/customer/model/Customer.java,0/3/032d0e5c9c3df0b0a6216fa556c00df2009774de
-E
-eureka-server/pom.xml,b/3/b39ae52d769ea03b699b5602439afd875433c8a7
 ‚
 Rcustomer/src/main/java/io/github/manuelernesto/customer/config/CustomerConfig.java,9/d/9da70ede20e1523f6c2830a142f105dd308d4d25
 ?
@@ -47,24 +45,14 @@ jnotification/src/main/kotlin/io/github/manuelernesto/notification/api/controlle
 mnotification/src/main/kotlin/io/github/manuelernesto/notification/domain/repository/NotificationRepository.kt,0/d/0d7df22536d54764c32261c77635b9a30b782f1b
 ‹
 [clients/src/main/java/io/github/manuelernesto/clients/notification/NotificationRequest.java,a/e/ae001ec134f09e36c603148610a7a8eab17ecfed
-=
-fraud/pom.xml,d/0/d024669e89b7b66ac8ba07340a73edc6aa228259
 w
 Gapigw/src/main/java/io/github/manuelernesto/apigw/ApiGWApplication.java,a/b/ab646d3c7f1f02c12007a8971c8a3a9a9bacdd72
-=
-apigw/pom.xml,7/6/769e90cc07d0503e53ff9da3a1e936a2b49abb7c
-B
-docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
 Ž
 ^customer/src/main/java/io/github/manuelernesto/customer/api/controller/CustomerController.java,9/1/91a1d25c855d24c9e08ed43b98d172982cd36907
 <
 amqp/pom.xml,3/9/39d5bf97f55ed62f85d09f9444dcd78c9eb5188e
 s
 Camqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQConfig.java,5/9/597fd2394c3d95a3a8ca5fc7798b0519b7dde17f
-@
-customer/pom.xml,f/0/f04db7a99ce1257e856612bd563cd946a39fac96
-D
-notification/pom.xml,0/d/0d8056be62f90a93d2bc0b4ea5db519b06028b1e
 |
 Lamqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQMessageProducer.java,0/3/032eddbe5893dd58a03a633d6268db1d217b7f47
 p
@@ -87,3 +75,8 @@ j
 fnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitmq/NotificationConfig.kt,7/0/70458cfd25a50417382e44bda41f57fae2d23ac1
 ?
 diagrams.drawio,0/d/0d08b952a127654b9c92970bc53250fb1113a18f
+9
+	.dcignore,7/7/7791000a9a93019a87d67e0b676c86447ba29c67
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
