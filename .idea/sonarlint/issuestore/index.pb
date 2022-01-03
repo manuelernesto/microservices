@@ -1,7 +1,5 @@
 
 9
-	.dcignore,7/7/7791000a9a93019a87d67e0b676c86447ba29c67
-9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ‘
 acustomer/src/main/java/io/github/manuelernesto/customer/domain/repository/CustomerRepository.java,d/a/da21cafa046f4ec2d09cdd8c9148e60a6af0c145
@@ -59,3 +57,33 @@ B
 docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
 Ž
 ^customer/src/main/java/io/github/manuelernesto/customer/api/controller/CustomerController.java,9/1/91a1d25c855d24c9e08ed43b98d172982cd36907
+<
+amqp/pom.xml,3/9/39d5bf97f55ed62f85d09f9444dcd78c9eb5188e
+s
+Camqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQConfig.java,5/9/597fd2394c3d95a3a8ca5fc7798b0519b7dde17f
+@
+customer/pom.xml,f/0/f04db7a99ce1257e856612bd563cd946a39fac96
+D
+notification/pom.xml,0/d/0d8056be62f90a93d2bc0b4ea5db519b06028b1e
+|
+Lamqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQMessageProducer.java,0/3/032eddbe5893dd58a03a633d6268db1d217b7f47
+p
+@customer/src/main/java/io/github/manuelernesto/customer/api.http,6/b/6bf47705bdc9f6c5877a43b0e4f24f84a454b3df
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+€
+Pcustomer/src/main/java/io/github/manuelernesto/customer/CustomerApplication.java,9/e/9ed2a9d97ced31d06033750bf90056b771c2a98b
+‹
+[customer/src/main/java/io/github/manuelernesto/customer/domain/service/CustomerService.java,4/e/4e8c2daac906ae6c736cec063d20eccbc6c53009
+—
+gnotification/src/main/kotlin/io/github/manuelernesto/notification/domain/service/NotificationService.kt,8/0/806bfec24515a35d76722344052fd2db9c716d39
+Œ
+\notification/src/main/kotlin/io/github/manuelernesto/notification/NotificationApplication.kt,b/6/b688ed1b3ad77425edeb017cc66b4204213026ec
+˜
+hnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitmq/NotificationConsumer.kt,b/0/b0b47d476779e1698e86fd0f4463a842352fc31e
+j
+:apigw/src/main/java/io/github/manuelernesto/apigw/api.http,9/6/96c12a7809e71231daf282724dcb3a3fc5b2c44d
+–
+fnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitmq/NotificationConfig.kt,7/0/70458cfd25a50417382e44bda41f57fae2d23ac1
+?
+diagrams.drawio,0/d/0d08b952a127654b9c92970bc53250fb1113a18f
