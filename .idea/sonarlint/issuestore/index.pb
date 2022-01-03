@@ -80,8 +80,6 @@ B
 clients/pom.xml,e/8/e897e41994586ab73af075bc072526099d5eec43
 @
 customer/pom.xml,f/0/f04db7a99ce1257e856612bd563cd946a39fac96
-E
-eureka-server/pom.xml,b/3/b39ae52d769ea03b699b5602439afd875433c8a7
 =
 fraud/pom.xml,d/0/d024669e89b7b66ac8ba07340a73edc6aa228259
 D
