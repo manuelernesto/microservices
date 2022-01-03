@@ -9,8 +9,6 @@ fcustomer/src/main/java/io/github/manuelernesto/customer/model/request/CustomerR
 Kcustomer/src/main/java/io/github/manuelernesto/customer/model/Customer.java,0/3/032d0e5c9c3df0b0a6216fa556c00df2009774de
 ‚
 Rcustomer/src/main/java/io/github/manuelernesto/customer/config/CustomerConfig.java,9/d/9da70ede20e1523f6c2830a142f105dd308d4d25
-?
-clients/pom.xml,e/8/e897e41994586ab73af075bc072526099d5eec43
 l
 <fraud/src/main/kotlin/io/github/manuelernesto/fraud/api.http,c/e/ce573b863dd724dabe3a89e9c560ba869e7f8562
 ƒ
@@ -49,8 +47,6 @@ w
 Gapigw/src/main/java/io/github/manuelernesto/apigw/ApiGWApplication.java,a/b/ab646d3c7f1f02c12007a8971c8a3a9a9bacdd72
 Ž
 ^customer/src/main/java/io/github/manuelernesto/customer/api/controller/CustomerController.java,9/1/91a1d25c855d24c9e08ed43b98d172982cd36907
-<
-amqp/pom.xml,3/9/39d5bf97f55ed62f85d09f9444dcd78c9eb5188e
 s
 Camqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQConfig.java,5/9/597fd2394c3d95a3a8ca5fc7798b0519b7dde17f
 |
