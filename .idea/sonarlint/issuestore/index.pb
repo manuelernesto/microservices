@@ -47,8 +47,6 @@ w
 Gapigw/src/main/java/io/github/manuelernesto/apigw/ApiGWApplication.java,a/b/ab646d3c7f1f02c12007a8971c8a3a9a9bacdd72
 Ž
 ^customer/src/main/java/io/github/manuelernesto/customer/api/controller/CustomerController.java,9/1/91a1d25c855d24c9e08ed43b98d172982cd36907
-s
-Camqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQConfig.java,5/9/597fd2394c3d95a3a8ca5fc7798b0519b7dde17f
 |
 Lamqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQMessageProducer.java,0/3/032eddbe5893dd58a03a633d6268db1d217b7f47
 p
@@ -76,3 +74,15 @@ fnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitm
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+B
+docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
+?
+clients/pom.xml,e/8/e897e41994586ab73af075bc072526099d5eec43
+@
+customer/pom.xml,f/0/f04db7a99ce1257e856612bd563cd946a39fac96
+E
+eureka-server/pom.xml,b/3/b39ae52d769ea03b699b5602439afd875433c8a7
+=
+fraud/pom.xml,d/0/d024669e89b7b66ac8ba07340a73edc6aa228259
+D
+notification/pom.xml,0/d/0d8056be62f90a93d2bc0b4ea5db519b06028b1e
