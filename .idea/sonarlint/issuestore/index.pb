@@ -63,8 +63,6 @@ gnotification/src/main/kotlin/io/github/manuelernesto/notification/domain/servic
 \notification/src/main/kotlin/io/github/manuelernesto/notification/NotificationApplication.kt,b/6/b688ed1b3ad77425edeb017cc66b4204213026ec
 ˜
 hnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitmq/NotificationConsumer.kt,b/0/b0b47d476779e1698e86fd0f4463a842352fc31e
-j
-:apigw/src/main/java/io/github/manuelernesto/apigw/api.http,9/6/96c12a7809e71231daf282724dcb3a3fc5b2c44d
 –
 fnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitmq/NotificationConfig.kt,7/0/70458cfd25a50417382e44bda41f57fae2d23ac1
 ?
@@ -74,8 +72,6 @@ fnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitm
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-B
-docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
 ?
 clients/pom.xml,e/8/e897e41994586ab73af075bc072526099d5eec43
 @
