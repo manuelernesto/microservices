@@ -51,8 +51,6 @@ Gapigw/src/main/java/io/github/manuelernesto/apigw/ApiGWApplication.java,a/b/ab
 Lamqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQMessageProducer.java,0/3/032eddbe5893dd58a03a633d6268db1d217b7f47
 p
 @customer/src/main/java/io/github/manuelernesto/customer/api.http,6/b/6bf47705bdc9f6c5877a43b0e4f24f84a454b3df
-S
-#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 €
 Pcustomer/src/main/java/io/github/manuelernesto/customer/CustomerApplication.java,9/e/9ed2a9d97ced31d06033750bf90056b771c2a98b
 ‹
@@ -80,3 +78,17 @@ fnotification/src/main/kotlin/io/github/manuelernesto/notification/queue/rabbitm
 fraud/pom.xml,d/0/d024669e89b7b66ac8ba07340a73edc6aa228259
 D
 notification/pom.xml,0/d/0d8056be62f90a93d2bc0b4ea5db519b06028b1e
+<
+amqp/pom.xml,3/9/39d5bf97f55ed62f85d09f9444dcd78c9eb5188e
+s
+Camqp/src/main/java/io/github/manuelernesto/amqp/RabbitMQConfig.java,5/9/597fd2394c3d95a3a8ca5fc7798b0519b7dde17f
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+=
+apigw/pom.xml,7/6/769e90cc07d0503e53ff9da3a1e936a2b49abb7c
+E
+eureka-server/pom.xml,b/3/b39ae52d769ea03b699b5602439afd875433c8a7
+j
+:apigw/src/main/java/io/github/manuelernesto/apigw/api.http,9/6/96c12a7809e71231daf282724dcb3a3fc5b2c44d
+B
+docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
