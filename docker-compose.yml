@@ -43,6 +43,8 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+    networks:
+      - spring
 
   eureka-server:
     image: manuelernest0/eureka-server:latest
@@ -68,6 +70,55 @@ services:
       - eureka-server
     networks:
       - spring
+
+  customer:
+    image: manuelernest0/customer:latest
+    container_name: customer
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - zipkin
+      - eureka-server
+      - rabbitmq
+      - postgres
+    networks:
+      - spring
+      - postgres
+
+  fraud:
+    image: manuelernest0/fraud:latest
+    container_name: fraud
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - zipkin
+      - eureka-server
+      - rabbitmq
+      - postgres
+    networks:
+      - spring
+      - postgres
+
+
+  notification:
+    image: manuelernest0/notification:latest
+    container_name: notification
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - zipkin
+      - eureka-server
+      - rabbitmq
+      - postgres
+    networks:
+      - spring
+      - postgres
 
 networks:
   postgres:
