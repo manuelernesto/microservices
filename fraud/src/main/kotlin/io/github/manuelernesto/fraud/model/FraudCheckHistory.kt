@@ -18,6 +18,4 @@ data class FraudCheckHistory(
     var customerId: Int,
     var isFraudster: Boolean,
     var createdAt: LocalDateTime
-) {
-    constructor() : this(0, 0, false, LocalDateTime.now())
-}
+)
