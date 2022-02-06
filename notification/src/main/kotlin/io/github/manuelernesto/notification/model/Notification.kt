@@ -20,6 +20,4 @@ data class Notification(
     var sender: String,
     var message: String,
     var sentAt: LocalDateTime
-) {
-    constructor() : this(0, 0, "", "", "", LocalDateTime.now())
-}
+)
